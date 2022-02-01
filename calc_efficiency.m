@@ -8,7 +8,9 @@ disp(success);
 
 average_mag = mean(mag);
 average_best = mean(min(mag));
-%disp(average_best);
+
+figure;
+
 plot(average_mag);
 
 end
