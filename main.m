@@ -1,5 +1,10 @@
 p = [-4 2];
-[x, y] = drifting_circle(p);
+v = 50e-3;
+d = 120;
+s = 1;
+n = 1000;
+
+[x, y] = drifting_circleALGORITHMNew(p);
 calc_efficiency(x,y);
 
 figure;

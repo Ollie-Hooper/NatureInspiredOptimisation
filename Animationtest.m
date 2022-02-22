@@ -5,12 +5,14 @@ z = (1000/sqrt(2*pi).*exp(-(x.^2/2)-(y.^2/2)));
 %vw.FrameRate = 60;
 %open(vw)
 s = surf(x,y,z);
-zlim([0 500])
+%shading interp
+zlim([0 500]);
 
 for t = 1:100
     surf(x,y,z.*exp(-t))
-    zlim([0 500])
-    pause(0.1)
+    %shading interp
+    zlim([0 500]);
+    pause(0.1);
     %v = getframe(gcf);
     %writeVideo(vw, v);
 end
